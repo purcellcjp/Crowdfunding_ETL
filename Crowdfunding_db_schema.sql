@@ -91,22 +91,22 @@ CREATE TABLE contacts
 -- Table Imports
 --------------------------------------------------
 --------------------------------------------------
-COPY departments
+COPY category
 FROM 'C:\Users\purce\Documents\GitHub\Crowdfunding_ETL\Resources\category.csv'
 DELIMITER ','
 CSV HEADER;
 
-COPY titles
+COPY subcategory
 FROM 'C:\Users\purce\Documents\GitHub\Crowdfunding_ETL\Resources\subcategory.csv'
 DELIMITER ','
 CSV HEADER;
 
-COPY employees
+COPY contacts
 FROM 'C:\Users\purce\Documents\GitHub\Crowdfunding_ETL\Resources\contacts.csv'
 DELIMITER ','
 CSV HEADER;
 
-COPY dept_emp
+COPY campaign
 FROM 'C:\Users\purce\Documents\GitHub\Crowdfunding_ETL\Resources\campaign.csv'
 DELIMITER ','
 CSV HEADER;
