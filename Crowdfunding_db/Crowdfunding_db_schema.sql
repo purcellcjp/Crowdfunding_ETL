@@ -58,15 +58,15 @@ CREATE TABLE subcategory
 CREATE TABLE campaign 
 (
  cf_id				SERIAL 			PRIMARY KEY,
- contact_id			CHAR(5)			NOT NULL,
- company_name		DATE			NOT NULL,
- description		VARCHAR(30)		NOT NULL,
- goal				VARCHAR(30)		NOT NULL,
- pledged			CHAR(1)			NOT NULL,
- outcome			DATE			NOT NULL,
+ contact_id			INT				NOT NULL,
+ company_name		VARCHAR(50)		NOT NULL,
+ description		VARCHAR(75)		NOT NULL,
+ goal				DECIMAL(18,2)	NOT NULL,
+ pledged			DECIMAL(18,2)	NOT NULL,
+ outcome			VARCHAR(10)		NOT NULL,
  backers_count		INT				NOT NULL,
  country			CHAR(2)			NOT NULL,
- currency			CHAR(2)			NOT NULL,
+ currency			CHAR(3)			NOT NULL,
  launch_date		DATE		    NOT NULL,
  end_date			DATE		    NOT NULL,
  category_id		CHAR(4)			NOT NULL,
@@ -79,8 +79,8 @@ CREATE TABLE campaign
 --------------------------------------------------
 CREATE TABLE contacts 
 (
- contact_id			INT 			PRIMARY KEY,
- first_name			DECIMAL(18,2)	NOT NULL,
+ contact_id			SERIAL 			PRIMARY KEY,
+ first_name			VARCHAR(50)		NOT NULL,
  last_name			VARCHAR(50)		NOT NULL,
  email				VARCHAR(50)		NOT NULL
 );
@@ -160,7 +160,7 @@ DROP CONSTRAINT fk_dept_manager_emp_no;
 -- truncate Tables
 --------------------------------------------------
 --------------------------------------------------
-/* Needed in case import needs to be re-execute
+/* Needed in case import needs to be re-executed
 TRUNCATE TABLE category;
 TRUNCATE TABLE subcategory;
 TRUNCATE TABLE campaign;
