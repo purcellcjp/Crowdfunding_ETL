@@ -4,7 +4,7 @@
 -   Points 100
 -   Submitting a text entry box or a website url
 
-## Project Team Memebers
+## Project Team Members
 - Dan Montano
 - Gboyega Adeaga
 - Dawson Martin-Jones
