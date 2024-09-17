@@ -1,6 +1,6 @@
 ### Project 2 Crowdfunding-ETL
 
--   Due Tuesday by 11:59pm
+-   Due Tuesday, September 17, 2024 by 11:59pm
 -   Points 100
 -   Submitting a text entry box or a website url
 
